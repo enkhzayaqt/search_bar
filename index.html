@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,23 +12,13 @@
         <label for="search">Search users:</label>
         <input type="search" id="search">
     </div>
-    <div class="user-cards">
+    <div class="user-cards" data-user-cards-container></div>
+    <template user-card-template>
         <div class="card">
-            <div class="header">Name</div>
-            <div class="body">email</div>
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
         </div>
-        <div class="card">
-            <div class="header">Name</div>
-            <div class="body">email</div>
-        </div>
-        <div class="card">
-            <div class="header">Name</div>
-            <div class="body">email</div>
-        </div>
-        <div class="card">
-            <div class="header">Name</div>
-            <div class="body">email</div>
-        </div>
-    </div>
+    </template>
+
 </body>
 </html>
